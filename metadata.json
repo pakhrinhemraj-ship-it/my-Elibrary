@@ -1,0 +1,6 @@
+{
+  "name": "E-Library Pro",
+  "description": "A dark-themed, glassmorphic full-stack electronic library management system featuring live book tracking, member registration, and real-time statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

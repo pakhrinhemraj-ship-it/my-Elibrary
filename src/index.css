@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  
+  --color-base: #05050f;
+  --color-surface: #0d0d1a;
+  --color-cyan: #00f5ff;
+  --color-violet: #8b5cf6;
+  --color-gold: #f59e0b;
+  --color-green: #10b981;
+  --color-red: #ef4444;
+  --color-text: #e2e8f0;
+  --color-muted: #64748b;
+
+  --shadow-neon-cyan: 0 0 20px rgba(0, 245, 255, 0.35);
+  --shadow-neon-violet: 0 0 20px rgba(139, 92, 246, 0.35);
+  --shadow-neon-gold: 0 0 20px rgba(245, 158, 11, 0.35);
+}
+
+@utility glass-card {
+  background: rgba(13, 13, 26, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 245, 255, 0.15);
+  border-radius: 16px;
+}
+
+@utility glass-panel {
+  background: rgba(8, 8, 16, 0.75);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-right: 1px solid rgba(0, 245, 255, 0.08);
+}
+
+@utility glass-nav {
+  background: rgba(5, 5, 15, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(0, 245, 255, 0.1);
+}
+
+@utility neon-btn-cyan {
+  background: rgba(0, 245, 255, 0.1);
+  border: 1px solid #00f5ff;
+  box-shadow: 0 0 10px rgba(0, 245, 255, 0.2);
+  color: #00f5ff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: #00f5ff;
+    color: #05050f;
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.6);
+  }
+}
+
+@utility neon-btn-violet {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid #8b5cf6;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+  color: #8b5cf6;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: #8b5cf6;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(5, 5, 15, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 245, 255, 0.2);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 245, 255, 0.5);
+}
+
+/* General overrides */
+body {
+  background-color: #05050f;
+  color: #e2e8f0;
+  font-family: "Outfit", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.05em;
+}
